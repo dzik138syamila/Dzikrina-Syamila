@@ -1,15 +1,17 @@
+<!-- templates/blog/category_list.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Category List</title>
 </head>
 <body>
-    <h1>Blog</h1>
+    <h1>Category List</h1>
     <ul>
-        {% for blog in blogs %}
-        <li><a href="{% url 'blog_detail' blog.slug %}">{{ blog.title }}</a></li>
+        {% for category in categories %}
+            <li>{{ category.category }}</li>
         {% endfor %}
     </ul>
 </body>

@@ -1,0 +1,18 @@
+<!-- templates/blog/page_list.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page List</title>
+</head>
+<body>
+    <h1>Page List</h1>
+    <ul>
+        {% for page in pages %}
+            <li><a href="{% url 'page_detail' page.slug %}">{{ page.title }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

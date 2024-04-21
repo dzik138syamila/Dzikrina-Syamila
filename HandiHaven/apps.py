@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class TaskzenConfig(AppConfig):
+class HandihavenConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'TaskZen'
+    name = 'HandiHaven'

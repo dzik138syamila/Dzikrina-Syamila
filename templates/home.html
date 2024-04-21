@@ -1,34 +1,37 @@
+<!-- templates/home.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Home</title>
+    <title>Welcome to Our Blog</title>
 </head>
 <body>
-    <h1>Welcome to My Portfolio</h1>
-    <h2><a href="{% url 'projects' %}"> Project:</a></h2>
+    <h1>Welcome to Our Blog</h1>
+
+    <h2>Categories</h2>
     <ul>
-        {% for project in projects %}
-        <li>{{ project.title }} - {{ project.description }}</li>
+        {% for category in categories %}
+            <li>{{ category.category }}</li>
         {% endfor %}
     </ul>
-    <h2><a href="{% url 'skills' %}"> Skill:</a></h2>
+
+    <h2>Pages</h2>
     <ul>
-        {% for skill in skills %}
-        <li>{{ skill.name }} - {{ skill.description }} ({{ skill.percentage }}%)</li>
+        {% for page in pages %}
+            <li><a href="{% url 'page_detail' page.slug %}">{{ page.title }}</a></li>
         {% endfor %}
     </ul>
-    
 
-    <h2><a href="{% url 'blog' %}"> Blog:</a></h2>
-    {% for blog in blogs %}
-    <li><a href="{% url 'blog_detail' blog.slug %}">{{ blog.title }}</a></li>
-    {% endfor %}
-
-
-    <h2>Footer</h2>
-    <a href="{% url 'contact' %}">Contact</a><br>
-    <a href="{% url 'about' %}">About</a>
+    <h2>Posts</h2>
+    <ul>
+        {% for post in posts %}
+            <li><a href="{% url 'post_detail' post.slug %}">{{ post.title }}</a></li>
+            {% if post.image %}
+            <img src="{{ post.image.url }}" alt="{{ post.title }}">
+        {% endif %}
+        {% endfor %}
+    </ul>
 </body>
 </html>
