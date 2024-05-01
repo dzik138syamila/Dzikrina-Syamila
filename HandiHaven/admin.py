@@ -1,20 +1,17 @@
 from django.contrib import admin
-from .models import Category, Page, Blog
+from django import forms
+from .models import Blog
 
-class CategoryAdmin(admin.ModelAdmin):
-    list_display = ('category', 'slug')
-    prepopulated_fields = {'slug': ('category',)}
 
-class PageAdmin(admin.ModelAdmin):
-    list_display = ('title',)
-    search_fields = ('title',)
+# Register your models here.
+class BlogAdminForm(forms.ModelForm):
+    content = forms.CharField(widget=forms.Textarea(attrs={'id': "richtext_field"}))
+
+    class Meta:
+        model = Blog
+        fields = "__all__"
 
 class BlogAdmin(admin.ModelAdmin):
-    list_display = ('title', 'author', 'category', 'status', 'created_date', 'published_date')
-    list_filter = ('category', 'status', 'created_date', 'published_date')
-    search_fields = ('title', 'author', 'content')
-    prepopulated_fields = {'slug': ('title',)}
+    form = BlogAdminForm
 
-admin.site.register(Category, CategoryAdmin)
-admin.site.register(Page, PageAdmin)
 admin.site.register(Blog, BlogAdmin)

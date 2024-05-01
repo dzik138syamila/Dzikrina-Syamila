@@ -1,13 +1,16 @@
-# blog/urls.py
-
-from django.urls import path
-from . import views
+from django.contrib import admin
+from django.urls import path, include
+from HandiHaven. import views
 
 urlpatterns = [
-    path('', views.home, name='home'),
-    path('categories/', views.category_list, name='category_list'),
-    path('posts/', views.post_list, name='post_list'),
-    path('pages/', views.page_list, name='page_list'),
-    path('post/<slug:slug>/', views.post_detail, name='post_detail'),
-    path('page/<slug:slug>/', views.page_detail, name='page_detail'),
+    path('', views.index, name='home'),
+    path('about', views.about, name='about'),
+    path('contact', views.contact, name='contact'),
+    path('blog', views.blog, name='blog'),
+    path('projects', views.projects, name='projects'),
+    path('blogpost/<str:slug>', views.blogpost, name='blogpost'),
+    path('category/<str:category>', views.category, name='category'),
+    path('categories/', views.categories, name='categories'),
+    path('search/', views.search, name='search'),
+    path('thanks', views.thanks, name='thanks'),
 ]
