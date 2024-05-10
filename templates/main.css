@@ -1,10 +1,10 @@
 body {
-  font-family: "Saira", sans-serif;
+  font-family: "Raleway", sans-serif;
   margin: 20px;
 }
 
 h1 span{
-  color: rgb(0, 119, 255);
+  color: rgb(222, 184, 143);
 }
 
 .title-page{
@@ -54,7 +54,7 @@ margin-bottom: 40px;
 }
 
 .custom-bg-color {
-  background-color: rgb(0, 119, 255);
+  background-color: rgb(243, 213, 172);
 }
 
 .footer {
