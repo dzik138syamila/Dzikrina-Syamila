@@ -54,7 +54,7 @@ margin-bottom: 40px;
 }
 
 .custom-bg-color {
-  background-color: rgb(243, 213, 172);
+  background-color: hwb(35 67% 5%);
 }
 
 .footer {
@@ -66,7 +66,7 @@ margin-bottom: 40px;
       
 .footer {
   margin-top: 20px; 
-  background-color: #007bff;
+  background-color: rgb(222, 184, 143);
   color: white; 
   text-align: center; 
 }
