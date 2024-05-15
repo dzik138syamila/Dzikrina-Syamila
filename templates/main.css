@@ -4,7 +4,7 @@ body {
 }
 
 h1 span{
-  color: rgb(222, 184, 143);
+  color: hwb(35 54% 13%);
 }
 
 .title-page{
@@ -54,7 +54,7 @@ margin-bottom: 40px;
 }
 
 .custom-bg-color {
-  background-color: hwb(35 67% 5%);
+  background-color: hwb(35 37% 40%);
 }
 
 .footer {
@@ -66,10 +66,61 @@ margin-bottom: 40px;
       
 .footer {
   margin-top: 20px; 
-  background-color: rgb(222, 184, 143);
+  background-color: hwb(35 37% 40%);
   color: white; 
   text-align: center; 
 }
 .footer-text {
   margin-bottom: 0; 
+}
+
+.custom-btn1 {
+  background-color: hwb(35 37% 40%);
+  display: inline-block;
+  width: 100%; 
+  max-width: 300px;
+  margin: 0 auto;
+  color: white;
+}
+
+.custom-btn1:hover {
+  background-color: hwb(35 37% 40%);
+  color: white
+}
+
+.card-body {
+  text-align: center; 
+}
+
+.btn-outline-primary {
+  color: white;
+  border-color: white;
+}
+
+.custom-btn {
+ background-color: white;
+ color: rgb(99, 95, 95);
+}
+
+.custom-btn:hover {
+ background-color: rgb(233, 233, 233);
+ color: black
+}
+
+.custom-search {
+ border-color: black;
+}
+
+.custom-search:focus {
+ border-color: white;
+}
+
+.custom-outline-btn {
+ color: white;
+ border-color: white;
+}
+
+.custom-outline-btn:hover {
+ background-color: white;
+ color: white;
 }
