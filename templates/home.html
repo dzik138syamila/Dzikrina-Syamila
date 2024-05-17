@@ -8,19 +8,30 @@
     <link href="main.css" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar custom-bg-color">
+    <nav style="margin-top: -15px; margin-left: -10px; margin-right: -25px;" class="navbar navbar-expand-lg custom-bg-color">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-          <span class="text-white">HandiHaven</span>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
-          </li>
-        </a>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Type Here.." aria-label="Search">
-          <button class="btn custom-btn" type="submit">Search</button>
-        </form>
+        <img src="logo.png" alt="Logo" width="30" height="24" style="margin-right: 15px;" class="d-inline-block align-text-top">
+        <a class="navbar-brand" href="#">HandiHaven</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Type Here.." aria-label="Search">
+            <button class="btn custom-btn" type="submit">Search</button>
+          </form>  
+        </div>
       </div>
     </nav>    
     <h1 class="title-page fw-bold text-center ">Handicrafted <span>Haven</span></h1>
