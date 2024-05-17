@@ -3,7 +3,7 @@ PROJECT WEB DESIGN & UI/UX
 ![text](https://github.com/dzik138syamila/Dzikrina-Syamila/blob/main/screnshoots/Home%20Website.png)
 
 # Footer-Website
-![text](https://github.com/dzik138syamila/Dzikrina-Syamila/blob/main/screnshoots/Tampilan-Footer.png)
+![text](https://github.com/dzik138syamila/Dzikrina-Syamila/blob/main/screnshoots/Tampilan%20Footer.png)
 
 # AFTER DESIGN
 # Home-Website
